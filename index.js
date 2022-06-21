@@ -1,12 +1,10 @@
-//When the `button.hamburger-btn` element is clicked on smaller screens, the hamburger menu should open/close. Again, toggling the `show-menu` class on the `.hamburger-menu` element should show/hide the menu.
 var hamburgerMenu = document.getElementById('main-menu');
 var getBTN = document.getElementsByClassName("hamburger-btn")[0];
 
 document.getElementsByClassName("hamburger-btn")[0].addEventListener("click", function(){
     console.log('click')
     
-    //var getBTN = document.getElementsByClassName("hamburger-btn")[0];
-    //var hamburgerMenu = document.getElementById('main-menu');
+   
     if(getBTN.ariaExpanded == "true")
     {
         console.log('if')
@@ -20,12 +18,7 @@ document.getElementsByClassName("hamburger-btn")[0].addEventListener("click", fu
         getBTN.ariaExpanded = "true";
         getBTN.ariaHidden = "false"
     }
-    // var getMenu = document.getElementById("main-menu");
-    // getMenu.style.display = "block"
-    // for(let i = 0; i < getMenu.getElementsByTagName("li").length; i++)
-    // {
-    //     // alert(getMenu.getElementsByTagName("li")[i].style.visibility)
-    // }
+
 })
 
 
